@@ -1,8 +1,12 @@
 #!/usr/bin/env bash
 
-source ./env_vars.sh
-source ./aliases.sh
-source ./parse_git.sh
-source ./bash_prompt.sh
+this_path=$( cd "$(dirname "${BASH_SOURCE[0]}")" ; pwd -P )
 
-generate_prompt()
+source "$this_path/git/git-completion.bash"
+source "$this_path/git/git-prompt.sh"
+
+source "$this_path/env_vars.sh"
+source "$this_path/aliases.sh"
+source "$this_path/bash_prompt.sh"
+
+# generate_prompt

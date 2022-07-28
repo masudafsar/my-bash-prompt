@@ -6,4 +6,4 @@ export CLICOLOR=1
 export LSCOLORS=ExFxBxDxCxegedabagacad
 
 # you can disable parsing git in bash prompt
-export my_prompt_parse_git=1
+export MBP_GIT_PS1=true
